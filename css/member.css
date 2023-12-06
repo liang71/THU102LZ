@@ -11,7 +11,6 @@ body{
 
 .wrapper{
     width: 1200px;
-    height: 1081px;
     margin: 88px auto;
 }
 
@@ -54,7 +53,7 @@ body{
 }
 
 .nav{
-    width: 268.02px;
+    width: 20%;
     float: left;
 }
 
@@ -78,26 +77,16 @@ body{
 
 /* --------------- right input --------------- */
 .right{
-    float: right;
-    width: 875px;
+    float: left;
+    width: 70%;
+    margin-left: 36px;
 }
 
-.right a{
-    display: block;
-    width: 479px;
-    height: 46px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #355441;
-    text-align: center;
-    line-height: 46px;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-.right a:hover{
-    background-color: #87BC60;
+.right h2{
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 16px;
 }
 
 /* ----------------- 標籤 ----------------- */
@@ -121,23 +110,29 @@ input:focus{
 
 /* ----------------- 快速登入 ----------------- */
 .fb a{
-    display: block;
+    display: inline-block;
     font-size: 18px;
     font-weight: normal;
+    text-decoration: none;
     color: #ffffff;
     background-color: #0866FF;
+    border-radius: 8px;
     text-align: center;
     margin-bottom: 8px;
+    padding: 8px 16px;
 }
 
 .line a{
-    display: block;
+    display: inline-block;
     font-size: 18px;
     font-weight: normal;
+    text-decoration: none;
     color: #ffffff;
     background-color: #59B230;
+    border-radius: 8px;
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 36px;
+    padding: 8px 16px;
 }
 
 /* ----------------- 切換密碼 ----------------- */
@@ -155,4 +150,22 @@ input:focus{
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+}
+
+.save a{
+    display: block;
+    width: 479px;
+    height: 46px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #355441;
+    text-align: center;
+    line-height: 46px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.save a:hover{
+    background-color: #87BC60;
 }
