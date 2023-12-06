@@ -89,6 +89,10 @@ body{
     margin-bottom: 16px;
 }
 
+.contebt_width{
+    width: 479px;
+}
+
 /* ----------------- 標籤 ----------------- */
 label{
     display: block;
@@ -97,7 +101,7 @@ label{
 
 /* ----------------- 輸入框 ----------------- */
 input{
-    width: 70%;
+    width: 100%;
     padding: 8px 16px;
     margin-bottom: 16px;
     box-sizing: border-box;

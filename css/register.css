@@ -5,7 +5,7 @@ body{
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     letter-spacing: 1.5px;
-    background-color: #F9F9F9;
+    background-color: #FFE78F;
     color: #333333;
     font-size: 18px;
 }
@@ -84,6 +84,18 @@ input:focus{
     border-color: #4CAF50;
 }
 
+.input_password{
+    width: 70%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.input_password_real{
+    background-color: #fff;
+}
+
+
 /* ----------------- 切換密碼 ----------------- */
 #password, #confirm_password{
     width: 70%;
@@ -101,10 +113,16 @@ input:focus{
     cursor: pointer;
 }
 
-.fa-eye-slash {
+.fa-eye-slash{
     font-weight: 900;
     position: relative;
     left: -40px;
+}
+
+.fa-eye{
+    font-weight: 900;
+    position: relative;
+    left: -40px;  
 }
 
 /* ----------------- 驗證碼 ----------------- */
@@ -232,4 +250,11 @@ input#captchaInput{
 .fb a i, .line a i{
     margin-right: 10px;
     text-align: left;
+}
+
+
+
+/* ------------------ RWD -------------------- */
+@media screen and (max-width: 375px){
+    
 }
