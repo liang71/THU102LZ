@@ -9,7 +9,7 @@ body{
     color: #333333;
 }
 
-.wrapper{
+.content{
     width: 1200px;
     margin: 88px auto;
 }
@@ -55,6 +55,7 @@ body{
 .nav{
     width: 20%;
     float: left;
+    margin-left: 50px;
 }
 
 .nav a{
@@ -79,7 +80,9 @@ body{
 .right{
     float: left;
     width: 70%;
-    margin-left: 36px;
+    margin-left: 120px;
+    border-left: 1px solid #333333;
+    padding-left: 160px;
 }
 
 .right h2{
@@ -89,7 +92,7 @@ body{
     margin-bottom: 16px;
 }
 
-.contebt_width{
+.content_width{
     width: 479px;
 }
 
@@ -141,7 +144,7 @@ input:focus{
 
 /* ----------------- 切換密碼 ----------------- */
 #now_password, #set_password, #confirm_password{
-    width: 70%;
+    width: 100%;
     padding: 8px 16px;
     margin-bottom: 8px;
     box-sizing: border-box;
@@ -156,6 +159,18 @@ input:focus{
     cursor: pointer;
 }
 
+.fa-eye-slash{
+    font-weight: 900;
+    position: relative;
+    left: -40px;
+}
+
+.fa-eye{
+    font-weight: 900;
+    position: relative;
+    left: -40px;  
+}
+
 .save a{
     display: block;
     width: 479px;
@@ -168,6 +183,7 @@ input:focus{
     line-height: 46px;
     text-decoration: none;
     border-radius: 8px;
+    margin-top: 24px;
 }
 
 .save a:hover{
