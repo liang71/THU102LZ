@@ -1,8 +1,7 @@
 @import url(reset.css);
 
 body{
-    font-family: 'Noto Sans TC', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
     line-height: 1.6;
     letter-spacing: 1.5px;
     background-color: #F9F9F9;

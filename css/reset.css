@@ -46,3 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav a.active {
+    color: #335441;
+    border-bottom: 5px solid #335441;
+}

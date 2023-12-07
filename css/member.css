@@ -1,8 +1,7 @@
 @import url(reset.css);
 
 body{
-    font-family: 'Noto Sans TC', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
     line-height: 1.6;
     letter-spacing: 1.5px;
     background-color: #F9F9F9;
@@ -74,6 +73,11 @@ body{
 .nav a:hover{
     color:#87BC60;
     border-bottom: 1px solid #87BC60;
+}
+
+.nav a.active {
+    color: #335441;
+    border-bottom: 5px solid #335441;
 }
 
 /* --------------- right input --------------- */
@@ -151,25 +155,29 @@ input:focus{
     border-radius: 8px;
 }
 
-#password .i{
+.password_input i{
     position: absolute;
     right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 55%;
+    /* transform: translateY(40%); */
     cursor: pointer;
 }
 
-.fa-eye-slash{
+.password_input{
+    position: relative;
+}
+
+/* .fa-eye-slash{
     font-weight: 900;
     position: relative;
     left: -40px;
-}
+} */
 
-.fa-eye{
+/* .fa-eye{
     font-weight: 900;
     position: relative;
     left: -40px;  
-}
+} */
 
 .save a{
     display: block;
