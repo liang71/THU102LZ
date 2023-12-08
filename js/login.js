@@ -10,10 +10,26 @@ function togglePasswordVisibility(inputId) {
     icon.className = type === 'password' ? 'fas fa-eye-slash' : 'fas fa-eye';
 }
 
-function refreshCaptcha() {
-    // 隨機生成一個新的四位數驗證碼
-    var newCaptcha = Math.floor(1000 + Math.random() * 9000);
+// 忘記密碼popup
+$(function(){
 
-    // 更新頁面上的驗證碼
-    document.getElementById('captcha').textContent = newCaptcha;
-}
+    // 點按popup裡的叉叉就可以關掉
+      $('button').click(function(){
+        $('.mask').css('display', 'block');
+      })
+    
+      $('.fa-xmark').click(function(){
+        $('.mask').hide();
+      })
+    
+    // 點外面的空白處可以關閉popup   
+      $('.mask').click(function(event){
+        $(this).removeAttr('style');
+      })
+    
+    // 阻止冒泡事件，點擊popup裡的空白處不會被關閉
+      $('.popup').click(function(event){
+        event.stopPropagation();  
+      })
+    
+    })
