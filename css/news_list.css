@@ -10,7 +10,6 @@ body{
 
 .wrapper{
     width: 1200px;
-    height: 1216px;
     margin: 88px auto;
     /* border: 3px solid red; */
 }
@@ -39,7 +38,6 @@ body{
 .news1{
     height: 280px;
     margin-bottom: 24px;
-    /* border: 1px solid blue; */
 }
 
 .news1 img{
@@ -51,7 +49,6 @@ body{
     float: right;
     width: 648px;
     margin-right: 16px;
-    /* border: 1px solid green; */
 
     position: relative;
 }
@@ -271,6 +268,7 @@ body{
 /* pagination */
 .pagination{
     display: block;
+    padding: 48px 0;
 }
 
 .page {
@@ -304,4 +302,79 @@ body{
 a:nth-child(2) {
     background-color: #355441;
     color: white;
+}
+
+/* ------------------- RWD ------------------- */
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        width: 900px;
+    }
+    .news1 img, .news2 img, .news3 img, .news4 img {
+        width: 375px;
+    }
+    .content1, .content2, .content3, .content4 {
+        width: 500px;
+    }
+    .content1 h4, .content2 h4, .content3 h4, .content4 h4 {
+        font-size: 14px;
+    }
+    .content1 h1, .content2 h1, .content3 h1, .content4 h1 {
+        font-size: 18px;
+    }
+    .content1 p, .content2 p, .content3 p, .content4 p {
+        font-size: 16px;
+    }
+    .content1 a, .content2 a, .content3 a, .content4 a {
+        width: 120px;
+        font-size: 16px;
+        top: 170px;
+    }
+    .news1, .news2, .news3, .news4 {
+        height: 240px;
+    }
+    .pagination {
+        padding: 24px 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    .bn h1 {
+        font-size: 28px;
+        padding-left: 80px;
+    }
+    .bn h2 {
+        font-size: 16px;
+        padding-left: 80px;
+    }
+    
+    .wrapper {
+        width: 100%;
+        margin: 48px 0;
+    }
+    .news1, .news2, .news3, .news4 {
+        display: flex;
+        flex-direction: column;
+    }
+    .content1, .content2, .content3, .content4 {
+        width: 375px;
+        float: none;
+        font-size: 16px;
+        position: relative;
+    }
+    .content1 a, .content2 a, .content3 a, .content4 a {
+        position: absolute;
+        top: 220px;
+        width: 100%;
+        line-height: 32px;
+    }
+
 }

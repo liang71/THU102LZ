@@ -197,3 +197,27 @@ input:focus{
 .save a:hover{
     background-color: #87BC60;
 }
+
+/* --------------- RWD --------------- */
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    .bn h1 {
+        font-size: 28px;
+        padding-left: 80px;
+    }
+    .bn h2 {
+        font-size: 16px;
+        padding-left: 80px;
+    }
+    .wrapper {
+        width: 100%;
+        margin: 48px auto;
+    }
+    
+}

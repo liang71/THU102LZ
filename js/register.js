@@ -17,3 +17,4 @@ function refreshCaptcha() {
     // 更新頁面上的驗證碼
     document.getElementById('captcha').textContent = newCaptcha;
 }
+
