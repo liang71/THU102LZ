@@ -1,3 +1,12 @@
+
+$(function(){
+
+    $('.header-frame').load('header.html');
+  
+    $('.footer-frame').load('footer.html');
+  
+  })
+
 /* 控制Tabs */
 function openTab(event, tab_name) {
     // 宣告變數
