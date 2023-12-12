@@ -336,10 +336,16 @@ button:hover{
         font-size: 16px;
     }
     .signUp {
-        margin-bottom: 8px;
+        display: grid;
+        order: 2;
     }
     .signUp a {
         width: 268px;
+    }
+    .logIn {
+        display: grid;
+        order: 1;
+        margin-bottom: 8px;
     }
     .logIn a {
         width: 268px;

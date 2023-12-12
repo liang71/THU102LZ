@@ -337,10 +337,16 @@ input#captchaInput{
         font-size: 16px;
     }
     .logIn {
-        margin-bottom: 8px;
+        display: grid;
+        order: 2;
     }
     .logIn a {
         width: 268px;
+    }
+    .signUp {
+        display: grid;
+        order: 1;
+        margin-bottom: 8px;
     }
     .signUp a {
         width: 268px;
