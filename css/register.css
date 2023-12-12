@@ -255,15 +255,101 @@ input#captchaInput{
 
 /* ------------------ RWD -------------------- */
 @media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+        background-color: #f9f9f9;
+    }
+
+    .left {
+        display: none;
+    }
+    .right {
+        width: 100%;
+        border-radius: 0;
+        background-color: #f9f9f9;
+        float: none;
+    }
+    .right h2 {
+        font-size: 28px;
+    }
+    .right_content {
+        width: 360px;
+        margin-top: 24px;
+        margin-left: 40px;
+    }
+    i {
+        font-size: 14px;
+    }
+    .fa-eye-slash {
+        position: relative;
+        left: -30px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+    input {
+        width: 80%;
+    }
+    #password, #confirm_password {
+        width: 80%;
+    }
+    input#captchaInput {
+        width: 43%;
+    }
+    #captcha {
+        width: 46px;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 6px 8px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        display: inline-block;
+        text-align: center;
+        margin-left: 4px;
+    }
     #refreshBtn {
         line-height: 14px;
         font-size: 14px;
         margin-left: 4px;
     }
+    .agree input {
+        margin-right: 4px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .dashed-text {
+        font-size: 14px;
+    }
     .dashed-text::before, .dashed-text::after {
-        width: 4%;
+        width: 45%;
+    }
+
+    .btn {
+        display: grid;
     }
     .btn a {
-        width: 170px;
+        margin: 0;
+        font-size: 16px;
+    }
+    .logIn {
+        margin-bottom: 8px;
+    }
+    .logIn a {
+        width: 268px;
+    }
+    .signUp a {
+        width: 268px;
+    }
+
+    .fb a, .line a {
+        width: 74%;
+    }
+    .fb a span, .line a span {
+        font-size: 16px;
     }
 }

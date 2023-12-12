@@ -276,3 +276,82 @@ button:hover{
 .popup a:hover{
     background-color: #87BC60;
 }
+
+/* ----------------- RWD ----------------- */
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+        background-color: #f9f9f9;
+    }
+
+    .right {
+        display: none;
+    }
+    .left {
+        width: 100%;
+        border-radius: 0;
+        background-color: #f9f9f9;
+        float: none;
+    }
+    .left h2 {
+        font-size: 28px;
+    }
+    .left_content {
+        width: 360px;
+        margin-top: 24px;
+        margin-left: 40px;
+    }
+    i{
+        font-size: 14px;
+    }
+    .fa-eye-slash {
+        position: relative;
+        left: -30px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+    input {
+        width: 80%;
+    }
+    #password {
+        width: 80%;
+    }
+    .dashed-text {
+        font-size: 14px;
+    }
+    .dashed-text::before, .dashed-text::after {
+        width: 45%;
+    }
+
+    .btn {
+        display: grid;
+    }
+    .btn a {
+        margin: 0;
+        font-size: 16px;
+    }
+    .signUp {
+        margin-bottom: 8px;
+    }
+    .signUp a {
+        width: 268px;
+    }
+    .logIn a {
+        width: 268px;
+    }
+
+    .fb a, .line a {
+        width: 74%;
+    }
+    .fb a span, .line a span {
+        font-size: 16px;
+    }
+    button{
+        display: contents;
+    }
+}
